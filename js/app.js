@@ -3,7 +3,7 @@
 let animalObjArr = [];
 let keywordOpt = [];
 
-$.ajax('../data/page-1.json')
+$.ajax('data/page-1.json')
     .then(data => {
         let $select = $('select');
         data.forEach(ele => {
