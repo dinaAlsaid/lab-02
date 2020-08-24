@@ -15,10 +15,10 @@ $.ajax('data/page-1.json')
             if (keywordOpt.includes(item.keyword) === false) {
                 keywordOpt.push(item.keyword);
                 $select.append(`<option value="${item.keyword}">${item.keyword}</option>`);
-
+                
             }
-            $('.photo-template').first().hide()
         })
+        $('.photo-template').first().hide();
         console.log(keywordOpt);
         $select.click(function (event) {
             animalObjArr.forEach(item => {
